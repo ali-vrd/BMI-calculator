@@ -1,0 +1,44 @@
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.all-of-things {
+  border: 0.1px solid black;
+  padding: 50px;
+  box-shadow: 0px 0px 55px 10px black;
+}
+
+.fat-man img {
+  width: 200px;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+  font-family: "Brush Script MT";
+}
+
+input:hover {
+  background-color: darkgray;
+}
+
+input::placeholder {
+  color: green;
+  font-family: "Brush Script MT";
+}
+
+button {
+  font-family: "Brush Script MT";
+  font-size: 20px;
+  border-radius: 30px;
+  width: 50%;
+  background-color: cornflowerblue;
+}
+
+button:hover {
+  background-color: darkgray;
+  color: white;
+}
