@@ -13,34 +13,59 @@
     />
     <link rel="stylesheet" href="./style/main.css" />
   </head>
+
   <body>
     <div class="container d-flex flex-wrap all-of-things">
       <div class="fat-man">
         <img
-          src="https://thumbs.dreamstime.com/b/fat-man-blue-shirt-showing-obscene-gestures-27086651.jpg"
+          src="./image/fat-man.jpg"
           alt=""
         />
       </div>
       <div>
-        <div>
-          <div></div>
-          <div>Calculate the body mass index (BMI)</div>
-          <div></div>
+        <div class="bg-warning rounded p-1">
+          <div class="calculator-txt">the body mass index (BMI) calculator</div>
         </div>
         <div>
-          <input type="number" placeholder="Height (cm)" />
+          <input type="number" placeholder="Height (cm)" id="height" />
         </div>
         <div>
-          <input type="number" placeholder="Weight (km)" />
+          <input type="number" placeholder="Weight (km)" id="weight" />
         </div>
-        <div>
-          <input type="number" placeholder="Age" />
+        <div class="d-flex justify-content-between mt-2">
+          <button class="bg-primary btns" id="calculate">calculate</button>
+          <div class="d-flex">
+            <button class="bg-primary p-1 rounded darkmode" id="night">
+              N
+            </button>
+            <button class="bg-primary p-1 rounded darkmode" id="light">
+              L
+            </button>
+          </div>
         </div>
-        <div class="d-flex justify-content-center mt-2">
-          <button>calculate</button>
-        </div>
-        <div>
-          <p></p>
+
+        <div class="modal">
+          <div>
+            <div class="bmi"></div>
+            <div class="error"></div>
+            <div class="colors">
+              <div class="under">
+                <div class="arrow1">&darr;</div>
+                <div class="bg-warning color p-2 rounded">under weight</div>
+              </div>
+              <div class="normal">
+                <div class="arrow2">&darr;</div>
+                <div class="bg-success color p-2 rounded">Normal</div>
+              </div>
+              <div class="over">
+                <div class="arrow3">&darr;</div>
+                <div class="bg-danger color p-2 rounded">over weight</div>
+              </div>
+            </div>
+            <div class="back-btn">
+              <button class="bg-danger btns">back</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
